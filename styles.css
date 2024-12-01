@@ -1,12 +1,14 @@
+/* GLOBAL CHANGES */
 * {
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
 	box-sizing: border-box;
 }
 html {
-	max-width: 1300px;
+	height: auto;
 	width: 100%;
 	margin: auto;
+	overflow-x:hidden;
 }
 
 body {
@@ -15,32 +17,165 @@ body {
 	display: flex;
 	flex-direction: column;
 	margin: 0;
+	width: 100%;
 }
+/* END-GLOBAL CHANGES */
 
+/* NAVIGATION */
 nav {
 	background-color: #F2BB6C;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.navbar {
+.navbar{
+	display: flex;
+	/* justify-content: space-between; */
+	flex-wrap: wrap;
+	/* border: 2px solid; */
+	width: 100%;
 	list-style: none;
 	display: flex;
-    justify-content: center;
 	padding: 20px;
-	gap: 30px;
+	gap: 10px;
 	translate: 0 0%;
 	transition: all 300ms ease-in-out;
 }
 
-.navbar li img{
-    display: flex;
-    justify-content: flex-start;
-}
-
 .navbar li a {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	position: relative;
+	top: 30px; 
 	text-decoration: none;
 	font-weight: bold;
 	font-size: 15px;
 	transition: color 0.3s ease;
 	color: #281600;
 }
+/* END NAVIGATION */
+.image-container{
+	/* border: black 2px solid; */
+}
+.image-container img{
+	position:relative;
+	text-align: bottom;
+	color: white;
+	width: 100%;
+	height: auto;
+	z-index: 1000;
+}
+
+.text-hero{
+	position: absolute;
+	top: 440px;
+	left: 100px;
+	z-index: 1100;
+	color: white;
+	
+}
+
+.events-box{
+	display: flex;
+	justify-content: space-around;
+	/* border: black solid; */
+	height: 200px;
+	width: auto;
+	background-color: #F2BB6C;
+}
+
+.events-text{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.main-h1{
+	display: flex;
+	position: relative;
+	left: 15%;
+}
+.main-container {
+  display: flex;
+  width: 70%;
+  position: relative;
+  left: 15%;
+}
+.main-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: auto;
+  /* border: 50px solid #0f2624; */
+  justify-content: right;
+  background-color: #F7EDE3;
+  color: black;
+  padding-top: 42px;
+  padding-left: 50px;
+  padding-bottom: 109px;
+  padding-right: 50px;
+}
+.main1-img {
+  background-image: url(Media/SemesterProject1/Images/main1.jpg);	
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: left;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;	
+}
+.main2-img{
+	background-image: url(Media/SemesterProject1/Images/mammoth-1257288_1920-min.jpg);
+	width: 100%;
+ 	height: auto;
+  	background-size: cover;
+  	background-position: left;
+  	border-top-left-radius: 10px;
+  	border-bottom-left-radius: 10px;	
+}
+.main-text{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	position: relative;
+	/* right: 80px; */
+}
+#main-text1{
+
+}
+
+/* buttons */
+.btn-main1{
+	border: #B07837 solid 3px;
+	text-decoration: none;
+}
+
+.footer-box{
+	display: flex;
+	background-color: #F2BB6C;
+	justify-content: space-around;
+}
+
+.footer-box li a{
+	list-style: none;
+	text-decoration: none;
+	color: black;
+	
+}
+.footer-box li{
+	display: flex;
+	justify-content: space-evenly;
+	list-style: none;
+	color: black;
+}
+
+.main-container{
+	display: flex;
+}
+
+
+
+
+
+
