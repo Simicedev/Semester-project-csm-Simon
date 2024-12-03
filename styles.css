@@ -1,4 +1,6 @@
-/* GLOBAL CHANGES */
+/* GLOBAim CHANGES */
+@import"special-event.css";
+
 @font-face{
 	font-family: bagel;
 	src: url(Media/BagelFatOne-Regular.ttf);
