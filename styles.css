@@ -22,8 +22,8 @@ html {
 }
 
 body {
+	min-height: 100vh;
 	font-family: 'Open Sans', sans-serif;
-	height: auto;
 	display: flex;
 	flex-direction: column;
 	margin: 0;
@@ -31,7 +31,7 @@ body {
 /* END-GLOBAL CHANGES */
 
 /* NAVIGATION */
-nav {
+.nav-wrapper {
 	background-color: #F2BB6C;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	width: 100%;
@@ -40,7 +40,7 @@ nav {
 
 .navbar{
 	display: flex;
-	justify-content: space-around;
+	justify-content: flex-end;
 	align-items: center;
 	position: relative;
 	flex-wrap: wrap;
@@ -48,15 +48,14 @@ nav {
 	width: 100%;
 	list-style: none;
 	display: flex;
-	padding: 20px;
-	gap: 10px;
+	padding: 12px;
 	translate: 0 0%;
 	transition: all 300ms ease-in-out;
 	font-family: bagel;
 	
 }
 
-.navbar li a {
+.navbar a {
 	display: flex;
 	width: 100%;
 	height: auto;
@@ -65,33 +64,62 @@ nav {
 	transition: color 0.3s ease;
 	color: #281600;
 	font-size: 20px;
+	padding: 0 40px;
+	align-items: center;
+	
 }
+.navbar ul{
+	width: 100%;
+}
+
+.logo{
+	display: flex;
+	justify-content: center;
+}
+.navbar li:first-child{
+	margin-right: auto;
+}
+
 /* END NAVIGATION */
+/* --------------- */
+/* hero box starts here */
 .image-container{
-	border: black 2px solid;
+	background-image: url(Media/SemesterProject1/Images/hero1-min\ \(1\).jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	/* border: black 2px solid; */
+	width: 100%;
+	height: 417px;
 }
-.image-container img{
-	position:relative;
-	text-align: bottom;
-	color: white;
+
+.hero-image{
 	width: 100%;
 	height: auto;
-	z-index: 1000;
-	
 }
 
-.text-hero{
-	position: absolute;
-	top: 440px;
-	left: 100px;
-	z-index: 1100;
-	color: white;
-	
-}
+.hero-text{
+	color: #ffff;
+	display: flex;
+	width: 100%;
+	height: auto;
+	padding-top: 250px;
+	padding-left: 70px;
+	font-family: inter;
+	font-size: 25px;
+	font-weight: bold;
 
+}
+.hero-text #ET{
+	font-weight: 300;
+	font-size: 20px;
+}
+/* Hero box ends here */
+/* ------------------------ */
+/* Events box starts here */
 .events-box{
 	display: flex;
-	justify-content: space-around;
+	/* justify-content: space-around; */
 	/* border: black solid; */
 	height: 150px;
 	width: auto;
@@ -105,12 +133,15 @@ nav {
 	font-family: inter;
 	font-size: 20px;
 	color: #4D5B6B;
+	padding: 0 70px;
 }
 .welcome-text{
 	font-family: bagel;
 	font-size: 30px;
 }
-
+/* Events box ends here */
+/* -------------------- */
+/* Body-starts here */
 .main-h1{
 	display: flex;
 	position: relative;
@@ -146,7 +177,8 @@ nav {
   width: 100%;
   height: auto;
   background-size: cover;
-  background-position: left;
+  background-repeat: no-repeat;
+  background-position: center;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
@@ -155,10 +187,12 @@ nav {
 	width: 100%;
  	height: auto;
   	background-size: cover;
-  	background-position: left;
+	background-repeat: no-repeat;
+  	background-position: center;
   	border-top-left-radius: 10px;
   	border-bottom-left-radius: 10px;	
 }
+
 .main-text{
 	display: flex;
 	flex-direction: column;
@@ -176,6 +210,73 @@ nav {
 	font-size: 34px;
 }
 
+.main-end-wrapper{
+	display: flex;
+	flex-direction: row;
+	
+}
+
+#main-h1-end{
+	display: flex;
+	position: relative;
+	left: 5%;
+	font-family: bagel;
+	color: #4D5B6B;
+	font-weight: 200;
+}
+
+.info-box{
+	/* border: black solid 2px; */
+	display: flex;
+	width: 100%;
+	height: auto;
+	padding-left: 5%;
+}
+
+
+.infoimg1{
+	/* border: black solid 2px; */
+	width: 350px;
+	height: 200px;
+	background-image: url(Media/SemesterProject1/Images/learn-2405206_1920-min.jpg);
+	background-size:cover;
+	background-position: left;
+	background-repeat:no-repeat;
+	border-radius: 10px;
+}
+.infoimg2{
+	/* border: black solid 2px; */
+	width: 350px;
+	height: 200px;
+	background-image: url(Media/SemesterProject1/Images/library-1132573_1920-min.jpg);
+	background-size:cover;
+	background-position: left;
+	background-repeat:no-repeat;
+	border-radius: 10px;
+}
+.infoimg3{
+	/* border: black solid 2px; */
+	width: 350px;
+	height: 200px;
+	background-image: url(Media/SemesterProject1/Images/hero2-min.jpg);
+	background-size:cover;
+	background-position: left;
+	background-repeat:no-repeat;
+	border-radius: 10px;
+}
+.info-text{
+	display: flex;
+	justify-content: center;
+	font-family: inter, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-weight:lighter;
+	font-size: 20px;
+}
+.info-box svg{
+	padding-left: 50px;
+	
+}
+
+
 
 /* buttons */
 .tickets-button{
@@ -183,6 +284,8 @@ nav {
 	border: #B07837 solid 12px;
 	font-size: 20px;
 	border-radius: 10px;
+	padding: 0 20px;
+	
 }
 .tickets-button a{
 	color: white;
@@ -195,29 +298,52 @@ nav {
 	border: #B07837 solid 3px;
 	text-decoration: none;
 }
-
+a:hover{
+	color: #281600;
+}
+.navbar a:hover{
+	color: white;
+}
+.footer a:hover{
+	color: white;
+}
+/* End buttons */
 .footer-box{
 	display: flex;
 	background-color: #F2BB6C;
-	justify-content: space-around;
+	/* justify-content: center; */
+	font-family: inter;
+	padding-top: 10px;
 }
 
 .footer-box li a{
 	list-style: none;
 	text-decoration: none;
 	color: black;
+
 	
+}
+.footer-wrapper{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 170px;
 }
 .footer-box li{
 	display: flex;
+	flex-direction: row;
 	justify-content: space-evenly;
 	list-style: none;
 	color: black;
+	
+}
+.footer-box svg{
+	display: flex;
+	flex-direction: row;
+	width: 20px;
 }
 
-.main-container{
-	display: flex;
-}
+
 
 
 
