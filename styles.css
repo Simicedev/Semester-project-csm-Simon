@@ -300,14 +300,28 @@ body {
 	border: #B07837 solid 3px;
 	text-decoration: none;
 }
-
-.button-special{
-	color: white;
-	background-color: #B07837;
- 	list-style: none;
-    text-decoration: none;
+.btn-special-wrapper{
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
 }
-
+.special-btn{
+	background-color: #F2BB6C;
+	color: white;
+	font-size: larger;
+	border-radius: 10px;
+	width: 200px;
+	height: 40px;
+}
+.special-btn a{
+	list-style: none;
+	text-decoration: none;
+	border: none;
+}
+.special-btn:hover{
+	background-color: #281600;
+}
 
 .tickets-button:hover{
 	color: #281600;
@@ -330,6 +344,7 @@ a:hover{
 	font-family: inter;
 	width: 100%;
 	height: auto;
+	padding-top: 12px;
 }
 .footer-wrapper{
 	display: flex;
