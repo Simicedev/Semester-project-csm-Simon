@@ -18,7 +18,7 @@
 }
 html {
 	height: auto;
-	max-width: 1440px;
+	max-width: 90%;
 	margin: auto;
 	overflow-x:hidden;
 }
@@ -300,6 +300,18 @@ body {
 	border: #B07837 solid 3px;
 	text-decoration: none;
 }
+
+.button-special{
+	color: white;
+	background-color: #B07837;
+ 	list-style: none;
+    text-decoration: none;
+}
+
+
+.tickets-button:hover{
+	color: #281600;
+}
 a:hover{
 	color: #281600;
 }
@@ -312,39 +324,35 @@ a:hover{
 /* End buttons */
 .footer-box{
 	display: flex;
+	justify-content: space-evenly;
+	flex-direction: row;
 	background-color: #F2BB6C;
-	/* justify-content: center; */
 	font-family: inter;
-	padding-top: 10px;
-}
-
-.footer-box li a{
-	list-style: none;
-	text-decoration: none;
-	color: black;
-
-	
+	width: 100%;
+	height: auto;
 }
 .footer-wrapper{
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	padding: 0 170px;
-}
-.footer-box li{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	list-style: none;
-	color: black;
-	
-}
-.footer-box svg{
-	display: flex;
-	flex-direction: row;
-	width: 20px;
+	padding: 0 30px;
 }
 
+.footer-box a{
+	list-style: none;
+	text-decoration: none;
+	color: black;
+}
+
+.footer-box li{
+	display: flex;
+	justify-content: space-around;
+	color: black;
+}
+.footer-box svg{
+	flex-direction: row;
+	width: 20px;
+	height: auto;
+}
 
 
 
