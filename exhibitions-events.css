@@ -1,0 +1,67 @@
+.image-container3 {
+  background-image: url(Media/SemesterProject1/Images/mammoth-1257288_1920-min.jpg);
+  background-position: 10% 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 417px;
+}
+
+.exhibition-container {
+  display: flex;
+  justify-content: center;
+  /* border: black solid;| */
+  width: 100%;
+  height: auto;
+}
+
+.exhibition-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 65%;
+  /* border: black solid; */
+  height: 700px;
+  background-color: #f7ede3;
+  border-radius: 10px;
+}
+.exhibition-img-container {
+  display: flex;
+  /* border: black solid; */
+  width: 100%;
+  flex-direction: column;
+}
+
+.exhibition-image1 {
+  background-image: url(Media/SemesterProject1/Images/mammoth-1257288_1920-min.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  width: 100%;
+  height: 400px;
+}
+
+.exhibition-text-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+
+.exhibition-h1 {
+  display: flex;
+  justify-content: center;
+  font-family: bagel, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  /* text-align: center; */
+  color: #4d5b6b;
+  font-size: 1.5rem;
+}
+
+.exhibition-text1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: inter, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #4d5b6b;
+  font-size: larger;
+}

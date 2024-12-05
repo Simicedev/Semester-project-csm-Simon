@@ -1,5 +1,10 @@
 /* GLOBAim CHANGES */
 @import"special-event.css";
+@import"exhibitions-events.css";
+
+
+
+
 
 @font-face{
 	font-family: bagel;
@@ -232,7 +237,7 @@ body {
 	display: flex;
 	width: 100%;
 	height: auto;
-	padding-left: 5%;
+	justify-content: center;
 }
 
 
@@ -245,6 +250,9 @@ body {
 	background-position: left;
 	background-repeat:no-repeat;
 	border-radius: 10px;
+}
+.infoimg1:hover{
+	transition: 0.3s;
 }
 .infoimg2{
 	/* border: black solid 2px; */
@@ -307,7 +315,7 @@ body {
 	justify-content: center;
 }
 .special-btn{
-	background-color: #F2BB6C;
+	background-color: #B07837;
 	color: white;
 	font-size: larger;
 	border-radius: 10px;
