@@ -1,0 +1,122 @@
+.tickets-box-container{
+    width: 100%;
+    height: auto;
+    border: black solid;
+}
+
+
+.tickets-boxes-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.box1{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+}
+
+.box2{
+    display: flex;
+    flex-direction: column;
+    width: 150px
+}
+
+.box-title{
+    display: flex;
+    justify-content: center;
+    font-weight: lighter;
+    font-family: bagel, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.tickets-info-boxes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: bagel, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #4D5B6B;
+    width: 100%;
+    height: 150px;
+    /* border: black solid; */
+    border-radius: 10px;
+    background-color: #F7EDE3;
+}
+/* calender start */
+.tickets-box-container2{
+    width: 100%;
+    height: auto;
+    border: black solid;
+    color: #4D5B6B;
+    font-weight: light;
+    font-family: bagel,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.tickets-boxes-wrapper2{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    border: black solid;
+}
+
+.calender-h1{
+    margin: 0 35px 5px;
+    font-weight: lighter;
+    font-family: bagel, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.calender-h3{
+    font-family: bagel;
+    color: #4D5B6B;
+    font-weight: 50;
+    margin: 0 35px 5px;
+    /* margin: 0 15px 30px; */
+
+}
+.calender-container{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: auto;
+    
+}
+.calender-wrapper{
+    width: 380px;
+    height: auto;
+    background:#F2BB6C;
+    display: flex;
+    flex-direction: column;
+    border: black solid;
+    box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.5);
+    
+}
+.date{
+    width: 380px;
+    padding: 25px;
+}
+
+.days{
+    display: flex;
+    flex-wrap: wrap;
+}
+.number.active{
+    background-color: rgb(73, 73, 247);
+}
+.day,
+.number,
+.number-pre
+{
+    font-size: 18px;
+    color: white;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+}
+.number:hover,
+.number-pre:hover{
+    border: 2px solid rgba(0, 0, 0, 0.4);
+}
+.number-pre{
+    color: rgba(0, 0, 0, 0.4);
+}
