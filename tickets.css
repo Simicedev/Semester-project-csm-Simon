@@ -1,20 +1,25 @@
 .tickets-box-container{
     width: 100%;
     height: auto;
-    border: black solid;
+    /* border: black solid; */
 }
 
 
 .tickets-boxes-wrapper{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    position:relative;
+    left: 2%;
+    padding:10px;
 }
+
 
 
 .box1{
     display: flex;
+    
     flex-direction: column;
-    width: 150px;
+    width: 450px;
 }
 
 .box2{
@@ -25,27 +30,29 @@
 
 .box-title{
     display: flex;
-    justify-content: center;
     font-weight: lighter;
     font-family: bagel, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .tickets-info-boxes{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: bagel, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 5px;
     color: #4D5B6B;
     width: 100%;
     height: 150px;
     /* border: black solid; */
+    font-family: inter, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
     border-radius: 10px;
     background-color: #F7EDE3;
 }
 /* calender start */
 .tickets-box-container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 100%;
     height: auto;
-    border: black solid;
+    /* border: black solid; */
     color: #4D5B6B;
     font-weight: light;
     font-family: bagel,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -54,10 +61,50 @@
 .tickets-boxes-wrapper2{
     display: flex;
     flex-direction: column;
-    width: 200px;
-    border: black solid;
+    justify-content: center;
+    align-content: space-between;
+    /* text-align: center; */
+    width: 500px;
+    /* border: black solid; */
+    border: 10px;
 }
+.tickets-info-boxes2{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 25px;
+    padding-top: 10px;
+    font-family: bagel, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #4D5B6B;
+    width: 100%;
+    height: 130px;
+    /* border: black solid; */
+    border-radius: 10px;
+    background-color: #F7EDE3;
+}
+.box-title3{
+    font-weight: bold;
+    font-size: larger;
+}
+.box-title5,
+.box-title4{
+    font-family: inter;
+    font-size: 14px;
 
+}
+.tickets-btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    width: 100%;
+    height: auto;
+
+}
 .calender-h1{
     margin: 0 35px 5px;
     font-weight: lighter;
@@ -73,7 +120,7 @@
 }
 .calender-container{
     display: flex;
-    justify-content: flex-end;
+    padding: 30px;
     width: 100%;
     height: auto;
     
@@ -84,7 +131,7 @@
     background:#F2BB6C;
     display: flex;
     flex-direction: column;
-    border: black solid;
+    border: black solid 1px;
     box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.5);
     
 }

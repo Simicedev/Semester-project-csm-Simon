@@ -313,6 +313,9 @@ body {
 	display: flex;
 	justify-content: center;
 }
+.special-btn:hover{
+	cursor: pointer;
+}
 .special-btn{
 	background-color: #B07837;
 	color: white;
