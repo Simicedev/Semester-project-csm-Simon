@@ -13,149 +13,164 @@
         <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <section class="nav-wrapper">
-          <nav>
-            
-             <ul class="navbar" id="navbar">
-                <li class="logo"><a href="index.html"><img src="Media/SemesterProject1/Images/logo.png" alt="logo for community "></a></li>
+       <nav>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                 <li><a href="exhibitions-events.html">Exhibitions & Events</a></li>
                 <li><a href="tickets.html">Visit</a></li>
                 <li><a href="special-event.html">Special Events</a></li>
-                <li><a href="index.html">Support</a></li>
+                <li><a href="#">Support</a></li>
             </ul>
-           </nav>
-        </section>
+            <ul>
+                <li><a href="index.html"><img src="Media/SemesterProject1/Images/logo.png" alt="logo for community "></a></li>
+                <li class="hideonMobile"><a href="exhibitions-events.html">Exhibitions & Events</a></li>
+                <li class="hideonMobile"><a href="tickets.html">Visit</a></li>
+                <li class="hideonMobile"><a href="special-event.html">Special Events</a></li>
+                <li class="hideonMobile"><a href="#">Support</a></li>
+                <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+                </li>
+            </ul>
+        </nav>
+
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display='flex'
+            }
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display='none'
+            }
+        </script> 
         <section class="tickets-box-container">
             
             
         </section>
         <br>
         <hr>
-        <div class="calender-container">
-            <section class="tickets-box-container2">
-                <h1 class="box-title2">10 - 14 December</h1>
-                <div class="tickets-boxes-wrapper2">
-                    <div class="box3">
-                        <div class="tickets-info-boxes2">
-                            <div class="box-title3">Robotics And AI</div>
-                            <div class="box-title4">Student! 20 %</div>
-                            <div class="box-title5">Have to show International Student Identity Card.</div>
-                            <div class="tickets-time">09.00-12.00</div>
+        <main class="main-tickets">
+            <div class="calender-container">
+                <section class="tickets-box-container2">
+                    <h1 class="box-title2">10 - 14 December</h1>
+                        <div class="box3">
+                            <div class="tickets-info-boxes2">
+                                <div class="box-title3">Robotics And AI</div>
+                                <div class="box-title4">Student! 20 %</div>
+                                <div class="box-title5">Have to show International Student Identity Card.</div>
+                                <div class="tickets-time">09.00-12.00</div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="tickets-boxes-wrapper2">
-                    <div class="box3">
-                        <div class="tickets-info-boxes2">
-                            <div class="box-title3">Visiting Professor of Aeronautics</div>
-                            <div class="box-title4">Student! 20 %</div>
-                            <div class="box-title5">Have to show International Student Identity Card.</div>
-                            <div class="tickets-time">12.00-15.00</div>
+                    
+                        <div class="box3">
+                            <div class="tickets-info-boxes2">
+                                <div class="box-title3">Visiting Professor of Aeronautics</div>
+                                <div class="box-title4">Student! 20 %</div>
+                                <div class="box-title5">Have to show International Student Identity Card.</div>
+                                <div class="tickets-time">12.00-15.00</div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="tickets-boxes-wrapper2">
-                    <div class="box3">
-                        <div class="tickets-info-boxes2">
-                            <div class="box-title3">Say hello to Mia the Mammoth!</div>
-                            <div class="box-title4">Student! 20 %</div>
-                            <div class="box-title5">Have to show International Student Identity Card.</div>
-                            <div class="tickets-time">15.00-18.00</div>
+                    
+                        <div class="box3">
+                            <div class="tickets-info-boxes2">
+                                <div class="box-title3">Say hello to Mia the Mammoth!</div>
+                                <div class="box-title4">Student! 20 %</div>
+                                <div class="box-title5">Have to show International Student Identity Card.</div>
+                                <div class="tickets-time">15.00-18.00</div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                
-            </section>
-            <section class="tickets-btns">
-                    <a href="tickets.html"><button class="special-btn">Buy now!</button></a> 
-                    <a href="tickets.html"><button class="special-btn">Buy now!</button></a> 
-                    <a href="tickets.html"><button class="special-btn">Buy now!</button></a> 
+                    
+                    
                 </section>
-                
-            <div class="calender-wrapper">
-                <h1 class="calender-h1">December 2024</h1>
-                <h3 class="calender-h3">Booking</h3>
-                    <div class="date">
-                        <div class="days">
-                            <div class="day">Sun</div>
-                            <div class="day">Mon</div>
-                            <div class="day">Tus</div>
-                            <div class="day">Wed</div>
-                            <div class="day">Thu</div>
-                            <div class="day">Fri</div>
-                            <div class="day">Sat</div>
+                <section class="tickets-btns">
+                        <a href="tickets.html"><button class="special-btn">Buy now!</button></a> 
+                        <a href="tickets.html"><button class="special-btn">Buy now!</button></a> 
+                        <a href="tickets.html"><button class="special-btn">Buy now!</button></a> 
+                    </section>
+                    
+                <div class="calender-wrapper">
+                    <h1 class="calender-h1">December 2024</h1>
+                    <h3 class="calender-h3">Booking</h3>
+                        <div class="date">
+                            <div class="days">
+                                <div class="day">Sun</div>
+                                <div class="day">Mon</div>
+                                <div class="day">Tus</div>
+                                <div class="day">Wed</div>
+                                <div class="day">Thu</div>
+                                <div class="day">Fri</div>
+                                <div class="day">Sat</div>
 
-                            <div class="number-pre">26</div>
-                            <div class="number-pre">27</div>
-                            <div class="number-pre">28</div>
-                            <div class="number-pre">29</div>
-                            <div class="number-pre">30</div>
-                            <div class="number-pre">31</div>
-                            <div class="number">1</div>
-                            <div class="number">2</div>
-                            <div class="number">3</div>
-                            <div class="number">4</div>
-                            <div class="number">5</div>
-                            <div class="number">6</div>
-                            <div class="number">7</div>
-                            <div class="number">8</div>
-                            <div class="number">9</div>
-                            <div class="number">10</div>
-                            <div class="number">11</div>
-                            <div class="number active">12</div>
-                            <div class="number">13</div>
-                            <div class="number">14</div>
-                            <div class="number">15</div>
-                            <div class="number">16</div>
-                            <div class="number">17</div>
-                            <div class="number">18</div>
-                            <div class="number">19</div>
-                            <div class="number">20</div>
-                            <div class="number">21</div>
-                            <div class="number">22</div>
-                            <div class="number">23</div>
-                            <div class="number">24</div>
-                            <div class="number">25</div>
-                            <div class="number">26</div>
-                            <div class="number">27</div>
-                            <div class="number">28</div>
-                            <div class="number">29</div>
-                            <div class="number">30</div>
-                            <div class="number">31</div>
-                            <div class="number-pre">1</div>
-                            <div class="number-pre">2</div>
-                            <div class="number-pre">3</div>
-                            <div class="number-pre">4</div>
-                            <div class="number-pre">5</div>
+                                <div class="number-pre">26</div>
+                                <div class="number-pre">27</div>
+                                <div class="number-pre">28</div>
+                                <div class="number-pre">29</div>
+                                <div class="number-pre">30</div>
+                                <div class="number-pre">31</div>
+                                <div class="number">1</div>
+                                <div class="number">2</div>
+                                <div class="number">3</div>
+                                <div class="number">4</div>
+                                <div class="number">5</div>
+                                <div class="number">6</div>
+                                <div class="number">7</div>
+                                <div class="number">8</div>
+                                <div class="number">9</div>
+                                <div class="number">10</div>
+                                <div class="number">11</div>
+                                <div class="number active">12</div>
+                                <div class="number">13</div>
+                                <div class="number">14</div>
+                                <div class="number">15</div>
+                                <div class="number">16</div>
+                                <div class="number">17</div>
+                                <div class="number">18</div>
+                                <div class="number">19</div>
+                                <div class="number">20</div>
+                                <div class="number">21</div>
+                                <div class="number">22</div>
+                                <div class="number">23</div>
+                                <div class="number">24</div>
+                                <div class="number">25</div>
+                                <div class="number">26</div>
+                                <div class="number">27</div>
+                                <div class="number">28</div>
+                                <div class="number">29</div>
+                                <div class="number">30</div>
+                                <div class="number">31</div>
+                                <div class="number-pre">1</div>
+                                <div class="number-pre">2</div>
+                                <div class="number-pre">3</div>
+                                <div class="number-pre">4</div>
+                                <div class="number-pre">5</div>
 
+                                
+
+                            </div>
                             
-
                         </div>
                         
                     </div>
-                     
+                    
                 </div>
-                
-            </div>
-            <hr>
-            <div class="tickets-boxes-wrapper">
-                <div class="box1">
-                    <h1 class="box-title">Opening days & Fees</h1>
-                    <div class="tickets-info-boxes">
-                        
-                        * Adults - 180 nok <br>
-                        * Under 25-100 nok <br>
-                        * 0-15 - FREE! <br> <br>
-                        * Sun-Tue: 9-18 <br>
-                        * Wed-Sat:9-20 <br>
-                        
-                        
+                <hr>
+                <div class="tickets-boxes-wrapper">
+                    <div class="box1">
+                        <h1 class="box-title">Opening days & Fees</h1>
+                        <div class="tickets-info-boxes">
+                            
+                            * Adults - 180 nok <br>
+                            * Under 25-100 nok <br>
+                            * 0-15 - FREE! <br> <br>
+                            * Sun-Tue: 9-18 <br>
+                            * Wed-Sat:9-20 <br>
+                            
+                            
+                        </div>
                     </div>
+                    
                 </div>
-                
             </div>
-        </div>
-        
+        </main>
         <br>
         <br>
        <footer class="footer-box">

@@ -58,22 +58,11 @@
     font-family: bagel,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.tickets-boxes-wrapper2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: space-between;
-    /* text-align: center; */
-    width: 500px;
-    /* border: black solid; */
-    border: 10px;
-}
+
 .tickets-info-boxes2{
     display: flex;
-    position: relative;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     padding-bottom: 25px;
     padding-top: 10px;
     font-family: bagel, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
