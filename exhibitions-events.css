@@ -65,3 +65,8 @@
   color: #4d5b6b;
   font-size: larger;
 }
+
+#btn-special-wrapper{
+	display: flex;
+  justify-content: center;
+}
