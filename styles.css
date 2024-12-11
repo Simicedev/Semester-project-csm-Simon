@@ -104,7 +104,7 @@ nav li:first-child{
   }
   
 }
-@media(max-width: 600px){
+@media(max-width: 700px){
   .sidebar{
     width: 100%;
   }
@@ -167,7 +167,7 @@ nav li:first-child{
 	font-size: 20px;
 	color: #4D5B6B;
 	padding: 5px 30px;
-	width: 100%;
+	width: 70%;
 	height: auto;
 }
 .welcome-text{
@@ -255,7 +255,7 @@ nav li:first-child{
 }
 .title-maintext{
 	font-family: bagel;
-	font-size: 34px;
+	font-size: 44px;
 }
 @media(max-width:1200px){
 	.title-maintext{
@@ -520,7 +520,7 @@ svg{
   width: 15px;
 }
 
-@media(max-width:740px){
+@media(max-width:840px){
   .footer-col{
     width: 50%;
     margin-bottom: 30px;
@@ -531,7 +531,7 @@ svg{
   all:unset;
 }
 
-@media(max-width: 600px){
+@media(max-width: 700px){
   .footer-col{
     width: 100%;
   }

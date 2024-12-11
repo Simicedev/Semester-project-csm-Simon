@@ -28,6 +28,7 @@
   display: flex;
   /* border: black solid; */
   width: 100%;
+  height: auto;
   flex-direction: column;
 }
 
@@ -54,7 +55,7 @@
   font-family: bagel, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   /* text-align: center; */
   color: #4d5b6b;
-  font-size: 1.5rem;
+  font-size: 24px;
 }
 
 .exhibition-text1 {
@@ -63,7 +64,8 @@
   text-align: center;
   font-family: inter, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: #4d5b6b;
-  font-size: larger;
+  padding: 1rem;
+  font-size: 20px;
 }
 
 #btn-special-wrapper{
