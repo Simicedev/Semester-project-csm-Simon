@@ -55,10 +55,10 @@
 .number,
 .number-pre
 {
-    font-size: 18px;
+    font-size: 16px;
     color: white;
     height: 45px;
-    width: 45px;
+    width: 42px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,6 +83,13 @@
     gap: 1rem;
     color: #4D5B6B;
     font-family: bagel,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+@media(max-width:390px){
+    .tickets-box-container2{
+        width: 320px;
+        text-align: center;
+    }
+    
 }
 
 
