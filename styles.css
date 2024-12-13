@@ -126,7 +126,14 @@ nav li:first-child{
 }
 @media(max-width:400px){
 	.image-container{
-		background-position:top left ;
+		background-position:left ;
+		height: 380px;
+
+	}
+}
+@media(max-width:640px){
+	.image-container{
+		background-position:center ;
 		height: 380px;
 
 	}
@@ -265,7 +272,7 @@ nav li:first-child{
 @media (max-width:640px){
 	.main-wrapper{
 		height: 300px;
-		padding:0px
+		padding: 10px;
 	}
 }
 @media (max-width:400px){
