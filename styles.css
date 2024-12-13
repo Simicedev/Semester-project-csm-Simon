@@ -124,7 +124,7 @@ nav li:first-child{
 	width: 100%;
 	height: 417px;
 }
-@media(max-width:390px){
+@media(max-width:400px){
 	.image-container{
 		background-position:top left ;
 		height: 380px;
